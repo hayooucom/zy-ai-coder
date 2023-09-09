@@ -1,0 +1,29 @@
+我正在开发 vscode 插件，自动代码补全，目前可以将文件代码 光标处的 上下文 获取到。但是 我希望获取更多信息，比如 上下文内 关联的 变量定义。
+比如 这个内容包含 abc_obj .
+abc_obj 其实是 struct aaa.  如何通过vscode 插件API 接口 获取到指定变量的相关定义并接入到上下文呢？
+
+
+vscode 插件开发，如何获取当前 某变量文本的 原始定义 相关的内容。 比如 a:= test{} , 其实 struct test 是在另一个文件定义的。我需要struct test 相关的内容。
+
+vscode 插件开发，如何获取解析的语法内容。比如 我需要 搜索 item 变量的定义，首先搜索打开的文档，再搜索所有项目文档，包含 item 这个原始定义的内容，返回定义的位置或文本片段。给出代码：
+
+
+正在开发vscode 插件，获取当前文件的语法树，解析变量的定义
+文件会有各种类型 比如 python go 等。
+使用 'vscode.'+mdocument?.languageId+'-language-features' 插件
+请给出插件代码（typescript)：
+
+
+帮我写一段ts代码：
+  let sorted_symbols = all_symbols.sort((a, b) => {
+
+  });
+
+all_symbols 是 DocumentSymbol[]
+需要按照 abs( Symbol.range.start.line - targetline )*100 + abs( ( Symbol.range.end.character +  Symbol.range.start.character)/2 - target_character )*10 + Symbol.kind 得分
+其中 kind 得分如下
+Struct ：5
+Enum：3
+Function:2
+判断方式：symbol.kind === SymbolKind.Struct .。。
+代码：
