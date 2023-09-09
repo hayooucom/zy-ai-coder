@@ -1,16 +1,23 @@
-# 展映AI coder 自动代码补全 VSCode 插件
+# 展映AI coder 自动代码补全 VSCode 插件 
+## 更齐全的代码相关信息 注入到AI 上下文，获取最符合你需要的代码补全！
 
 请阅读 [展映AI coder 使用说明](https://docs.qq.com/doc/p/7435957583efb5dac41648290e65294c76fdf53b)
+
+* 增加了关联上下文中的 结构体 、函数、类、变量等信息，更加符合你的代码补全需求:
+
+代码补全更多信息接入，调试关联信息示例（golang)：
+
+![代码补全](https://github.com/hayooucom/zy-ai-coder/raw/master/assets/func_struct_info.png)
+
+
+![代码补全2](https://github.com/hayooucom/zy-ai-coder/raw/master/assets/func_struct_info2.png) 
+
 
 与 [hf.co/models](https://huggingface.hf.co/models) 上的开源代码模型兼容。 合作/模型）。
 
 ** 公告（2023 年 8 月 25 日）：此扩展的最新版本支持 [codellama/CodeLlama-13b-hf](http://hf.co/codellama/CodeLlama-13b-hf)。 查找更多信息 [此处](#code-llama) 如何使用此扩展测试 Code Llama。
 
 ** 公告（2023 年 9 月 4 日）：此扩展的最新版本支持 [Phind/Phind-CodeLlama-34B-v2](http://hf.co/Phind/Phind-CodeLlama-34B-v2) 和 [WizardLM/ WizardCoder-Python-34B-V1.0](http://hf.co/WizardLM/WizardCoder-Python-34B-V1.0)。 在[此处](#phind-and-wizardcoder)查找更多信息，了解如何使用此扩展测试这些模型。
-
-我们还提供以下扩展：
-* [neovim](https://github.com/huggingface/hfcc.nvim)
-* [jupyter](https://github.com/bigcode-project/jupytercoder)
 
 目前支持的型号有：
 
@@ -58,7 +65,7 @@
 您可以看到代码生成 API 的输入和输出：
 
 1. 打开 VSCode `OUTPUT` 面板
-2.选择‘抱脸码’
+2.选择‘ZYAICoder’
 
 <img src="https://github.com/hayooucom/zy-ai-coder/raw/master/assets/ext-output.png" width="800px">
 

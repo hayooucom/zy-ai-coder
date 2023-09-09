@@ -2,6 +2,12 @@
 
 Please Read [ZYinfo AI coder User guide](https://docs.qq.com/doc/p/3a8f527eca62688427fdde1cdf26b9428c2dbb71)
 
+Code completion for more information access, debugging related information example (golang):
+
+![Code completion](https://github.com/hayooucom/zy-ai-coder/raw/master/assets/func_struct_info.png)
+
+![Code completion 2](https://github.com/hayooucom/zy-ai-coder/raw/master/assets/func_struct_info2.png)
+
  making it compatible with open source code models on [hf.co/models](https://huggingface.co/models). 
 
 ** Announcement (Aug 25, 2023): latest version of this extension supports [codellama/CodeLlama-13b-hf](http://hf.co/codellama/CodeLlama-13b-hf). Find more info [here](#code-llama) how to test Code Llama with this extension.
@@ -27,7 +33,7 @@ By default, this extension is using [bigcode/starcoder](https://huggingface.co/b
 
 You can supply your HF API token ([hf.co/settings/token](https://hf.co/settings/token)) with this command:
 1. `Cmd/Ctrl+Shift+P` to open VSCode command palette
-2. Type: `Hugging Face Code: Set API token`
+2. Type: `ZYinfo.pro: Set API token`
 
 <img src="https://github.com/hayooucom/zy-ai-coder/raw/master/assets/set-api-token.png" width="800px">
 
