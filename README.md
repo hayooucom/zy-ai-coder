@@ -19,7 +19,7 @@ The currently supported models are:
 
 ## Installing
 
-Install just like any other [vscode extension](https://marketplace.visualstudio.com/items?itemName=HuggingFace.zy-ai-coder).
+Install just like any other [vscode extension](https://marketplace.visualstudio.com/items?itemName=Telfordpan.zy-ai-coder).
 
 By default, this extension is using [bigcode/starcoder](https://huggingface.co/bigcode/starcoder) & [Hugging Face Inference API](https://huggingface.co/inference-api) for the inference. However, you can [configure](#configuring) to make inference requests to your custom endpoint that is not Hugging Face Inference API. Thus, if you are using the default Hugging Face Inference AP inference, you'd need to provide [HF API Token](#hf-api-token).
 
@@ -29,14 +29,14 @@ You can supply your HF API token ([hf.co/settings/token](https://hf.co/settings/
 1. `Cmd/Ctrl+Shift+P` to open VSCode command palette
 2. Type: `Hugging Face Code: Set API token`
 
-<img src="https://github.com/huggingface/zy-ai-coder/raw/master/assets/set-api-token.png" width="800px">
+<img src="https://github.com/hayooucom/zy-ai-coder/raw/master/assets/set-api-token.png" width="800px">
 
 ## Testing
 
 1. Create a new python file
 2. Try typing `def main():`
 
-<img src="https://github.com/huggingface/zy-ai-coder/raw/master/assets/ext-working.png" width="800px">
+<img src="https://github.com/hayooucom/zy-ai-coder/raw/master/assets/ext-working.png" width="800px">
 
 #### Checking if the generated code is in [The Stack](https://huggingface.co/datasets/bigcode/the-stack)
 
@@ -49,7 +49,7 @@ This means false positives are possible and long enough surrounding context is n
 
 ## Developing
 Make sure you've [installed yarn](https://yarnpkg.com/getting-started/install) on your system.
-1. Clone this repo: `git clone https://github.com/huggingface/zy-ai-coder`
+1. Clone this repo: `git clone https://github.com/hayooucom/zy-ai-coder`
 2. Install deps: `cd zy-ai-coder && yarn install --frozen-lockfile`
 3. In vscode, open `Run and Debug` side bar & click `Launch Extension`
 
@@ -60,13 +60,13 @@ You can see input to & output from the code generation API:
 1. Open VSCode `OUTPUT` panel
 2. Choose `Hugging Face Code`
 
-<img src="https://github.com/huggingface/zy-ai-coder/raw/master/assets/ext-output.png" width="800px">
+<img src="https://github.com/hayooucom/zy-ai-coder/raw/master/assets/ext-output.png" width="800px">
 
 ## Configuring
 
 You can configure: endpoint to where request will be sent and special tokens.
 
-<img src="https://github.com/huggingface/zy-ai-coder/raw/master/assets/set-configs.png" width="800px">
+<img src="https://github.com/hayooucom/zy-ai-coder/raw/master/assets/set-configs.png" width="800px">
 
 Example:
 
@@ -101,7 +101,7 @@ To test Code Llama 13B model:
 3. Open Vscode Settings (`cmd+,`) & type: `Hugging Face Code: Config Template`
 4. From the dropdown menu, choose `codellama/CodeLlama-13b-hf`
 
-<img src="https://github.com/huggingface/zy-ai-coder/raw/master/assets/set-code-llama.png" width="600px">
+<img src="https://github.com/hayooucom/zy-ai-coder/raw/master/assets/set-code-llama.png" width="600px">
 
 Read more [here](https://huggingface.co/blog/codellama) about Code LLama.
 
@@ -113,7 +113,7 @@ To test [Phind/Phind-CodeLlama-34B-v2](http://hf.co/Phind/Phind-CodeLlama-34B-v2
 3. Open Vscode Settings (`cmd+,`) & type: `Hugging Face Code: Config Template`
 4. From the dropdown menu, choose `Phind/Phind-CodeLlama-34B-v2` or `WizardLM/WizardCoder-Python-34B-V1.0`
 
-<img src="https://github.com/huggingface/zy-ai-coder/raw/master/assets/set-phind-wizardcoder.png" width="600px">
+<img src="https://github.com/hayooucom/zy-ai-coder/raw/master/assets/set-phind-wizardcoder.png" width="600px">
 
 Read more about Phind-CodeLlama-34B-v2 [here](https://huggingface.co/Phind/Phind-CodeLlama-34B-v2) and WizardCoder-15B-V1.0 [here](https://huggingface.co/WizardLM/WizardCoder-15B-V1.0).
 ## Community
